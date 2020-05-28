@@ -6,5 +6,10 @@
         xmlns:local="clr-namespace:WpfApp_core"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="main_bg"/>
+    <Grid x:Name="main_bg" SizeChanged="Main_szChange" Background="#FF2B2B2B">
+        
+        <ListBox x:Name="ListBox_manhua" Margin="0,0,655,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" Background="{x:Null}" Width="{Binding Path=ListBox_manhua_Width}" BorderThickness="0,0,0,0"/>
+
+
+    </Grid>
 </Window>
